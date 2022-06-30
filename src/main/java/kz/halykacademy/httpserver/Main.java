@@ -19,7 +19,7 @@ public class Main {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("http://dummy.restapiexample.com/api/v1/create"))
-                .headers("Content-Type", "text/plain;charset=UTF-8")
+                .headers("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofFile(Paths.get("file.json")))
                 .build();
 
